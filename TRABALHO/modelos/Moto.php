@@ -5,6 +5,7 @@ require_once("Veiculos.php");
 Class Moto extends Veiculos{
     private $marca;
     private $modelo;
+    private $cilindrada;
     private $potencia;
     private $cor;
     private $ano;
@@ -14,7 +15,7 @@ Class Moto extends Veiculos{
     public function __toString()
     {
         
-        return "O Modelo: " . $this->modelo . " da Marca: " . $this->marca . " de potencia: " . $this->potencia . " de cor: " . $this->cor. " de potência: " . $this->ano;
+        return "O modelo: " . $this->modelo . " da marca: " . $this->marca . "com " . $this->cilindrada. " cilindradas" . " com potencia: " . $this->potencia . " de cor: " . $this->cor. " de potência: " . $this->ano;
         
     }
 
